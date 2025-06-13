@@ -169,7 +169,10 @@ export const Main = observer(({ projectId }: { projectId: string }) => {
                 >
                     <RightPanel />
                 </div>
-                <BottomBar />
+
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-toolbar-up ">
+                    <BottomBar />
+                </div>
             </div>
         </TooltipProvider>
     );

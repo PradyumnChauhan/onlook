@@ -14,11 +14,7 @@ import { HoverOnlyTooltip } from "../hover-tooltip";
 import { InputRange } from "../inputs/input-range";
 import { SpacingInputs } from "../inputs/spacing-inputs";
 import { observer } from "mobx-react-lite";
-<<<<<<< Updated upstream
-=======
 import { cn } from '@ui/utils/cn';
-
->>>>>>> Stashed changes
 
 export const Margin = observer(() => {
     const [activeTab, setActiveTab] = useState("all");

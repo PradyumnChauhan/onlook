@@ -61,18 +61,18 @@ export const BottomBar = observer(() => {
         <AnimatePresence mode="wait">
             {editorEngine.state.editorMode !== EditorMode.PREVIEW && (
                 <motion.div
-                     initial={{ opacity: 0, y: 20 }}
-                     animate={{ opacity: 1, y: 0 }}
-                     exit={{ opacity: 0, y: 20 }}
-                     className="absolute left-1/2 -translate-x-1/2 bottom-4 flex flex-col border p-1 px-1.5                    bg-background-secondary/85 dark:bg-background/85 backdrop-blur rounded-lg drop-shadow-xl"
-                     transition={{
-                       type: 'spring',
-                       bounce: 0.1,
-                       duration: 0.4,
-                       stiffness: 200,
-                       damping: 25,
-                     }}
-                   >
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    className="flex flex-col border p-1 px-1.5 bg-background-secondary/85 dark:bg-background/85 backdrop-blur rounded-lg drop-shadow-xl"
+                    transition={{
+                        type: 'spring',
+                        bounce: 0.1,
+                        duration: 0.4,
+                        stiffness: 200,
+                        damping: 25,
+                    }}
+                >
                     <TerminalArea>
                         <ToggleGroup
                             type="single"
